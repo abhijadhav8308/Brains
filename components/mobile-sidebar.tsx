@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { Menu } from "lucide-react"
 import Sidebar from "@/components/sidebar";
 import { useEffect, useState } from "react";
@@ -20,11 +20,10 @@ const MobileSidebar = () => {
     return (
         <Sheet>
             <SheetTrigger>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                    <Menu />
-                </Button>
+                <Menu className="md:hidden"/>
             </SheetTrigger>
             <SheetContent side="left" className="p-0">
+                <SheetTitle></SheetTitle>
                 <Sidebar/>
             </SheetContent>
         </Sheet>

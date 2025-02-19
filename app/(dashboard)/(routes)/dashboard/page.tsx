@@ -14,11 +14,11 @@ const tools = [
     href: "/conversation"
   },
   {
-    label: "Music Generation",
-    icon: MusicIcon,
-    color: "text-red-500",
+    label: "Code Generation",
+    icon: CodeIcon,
+    color: "text-green-500",
     bgColor: "bg-violet-500/10",
-    href: "/music"
+    href: "/code"
   },
   {
     label: "Image Generation",
@@ -28,18 +28,18 @@ const tools = [
     href: "/image"
   },
   {
+    label: "Music Generation",
+    icon: MusicIcon,
+    color: "text-red-500",
+    bgColor: "bg-violet-500/10",
+    href: "/music"
+  },
+  {
     label: "Video Generation",
     icon: VideoIcon,
     color: "text-gray-500",
     bgColor: "bg-violet-500/10",
     href: "/video"
-  },
-  {
-    label: "Code Generation",
-    icon: CodeIcon,
-    color: "text-green-500",
-    bgColor: "bg-violet-500/10",
-    href: "/code"
   },
 ]
 

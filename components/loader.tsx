@@ -6,7 +6,7 @@ export const Loader = () => {
             <div className="w-10 h-10 relative">
                 <Image alt="loader-image" fill src="/fade-stagger-circles.svg"/>
             </div>
-            <p className="text-sm text-muted-foreground">Brains is loading....</p>
+            <p className="text-sm text-muted-foreground">Brains is thinking....</p>
         </div>
     )
 }

@@ -24,16 +24,16 @@ const sidebarRoutes = [
         color: "text-violet-500",
     },
     {
+        label: "Code Generation",
+        icon: CodeIcon,
+        href: "/code",
+        color: "text-emerald-700",
+    },
+    {
         label: "Image Generation",
         icon: ImageIcon,
         href: "/image",
         color: "text-pink-700",
-    },
-    {
-        label: "Video Generation",
-        icon: VideoIcon,
-        href: "/video",
-        color: "text-orange-700",
     },
     {
         label: "Music Generation",
@@ -42,10 +42,10 @@ const sidebarRoutes = [
         color: "text-orange-700",
     },
     {
-        label: "Code Generation",
-        icon: CodeIcon,
-        href: "/code",
-        color: "text-emerald-700",
+        label: "Video Generation",
+        icon: VideoIcon,
+        href: "/video",
+        color: "text-orange-700",
     },
     {
         label: "Settings",
@@ -64,7 +64,7 @@ const Sidebar = () => {
             <div className="px-3 py-2 flex-1">
                 <Link href="/dashboard" className="flex items-center pl-3 mb-14">
                     <div className="relative w-8 h-8 mr-4">
-                        <Image alt="logo" src="/brains-logo.png" fill />
+                        <Image alt="logo" src="/brains-logo.png" fill sizes="33vw"/>
                     </div>
                     <h1 className={cn("text-2xl font-bold", poppins.className)}>Brains</h1>
                 </Link>
