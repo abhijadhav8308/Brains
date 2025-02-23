@@ -17,8 +17,11 @@ import { Loader } from "@/components/loader";
 import { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardFooter } from "@/components/ui/card";
+import { useProModal } from "@/hooks/use-pro-modal";
+import toast from "react-hot-toast";
 
 const ImagePage = () => {
+    const proModal = useProModal();
     const router = useRouter();
     const [image, setImage] = useState<string>("");
 
@@ -36,21 +39,17 @@ const ImagePage = () => {
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
             setImage("");
-
-            console.log(values);
-
             const response = await axios.post("/api/image", values);
-
-            console.log(JSON.stringify(response));
-
             const url = response.data;
-
             setImage(url);
-
             form.reset();
         } catch (error: any) {
-            // TODO Open Pro Model
-            console.log("error occured : " + error);
+            if (error?.response?.status === 403) {
+                proModal.onOpen();
+            }
+            else {
+                toast.error("something went wrong");
+            }
         } finally {
             router.refresh();
         }

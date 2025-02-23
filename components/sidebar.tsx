@@ -6,7 +6,8 @@ import Link from "next/link";
 import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { CodeIcon, ImageIcon, LayoutDashboard, MessageSquare, MusicIcon, SettingsIcon, VideoIcon } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation"; 
+import { FreeCounter } from "@/components/freecounter";
 
 const poppins = Poppins({weight: "600", subsets: ["latin"]});
 
@@ -47,15 +48,13 @@ const sidebarRoutes = [
         href: "/video",
         color: "text-orange-700",
     },
-    {
-        label: "Settings",
-        icon: SettingsIcon,
-        href: "/settings",
-        color: "",
-    },
 ];
 
-const Sidebar = () => {
+interface SidebarProps {
+    apiLimitCount: number;
+};
+
+const Sidebar = ({apiLimitCount = 0}:SidebarProps) => {
 
     const pathname = usePathname();
 
@@ -81,6 +80,7 @@ const Sidebar = () => {
                     ))}
                 </div>
             </div>
+            <FreeCounter apiLimitCount={apiLimitCount} />
         </div>
      );
 }
