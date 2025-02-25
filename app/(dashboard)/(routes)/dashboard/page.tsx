@@ -9,35 +9,35 @@ const tools = [
   {
     label: "Conversation",
     icon: MessageSquare,
-    color: "text-violet-500",
+    color: "text-[#9a21eb]",
     bgColor: "bg-violet-500/10",
     href: "/conversation"
   },
   {
     label: "Code Generation",
     icon: CodeIcon,
-    color: "text-green-500",
+    color: "text-[#eb5f52]",
     bgColor: "bg-violet-500/10",
     href: "/code"
   },
   {
     label: "Image Generation",
     icon: ImageIcon,
-    color: "text-blue-500",
+    color: "text-[#3c83ed]",
     bgColor: "bg-violet-500/10",
     href: "/image"
   },
   {
     label: "Music Generation",
     icon: MusicIcon,
-    color: "text-red-500",
+    color: "text-[#00bd8e]",
     bgColor: "bg-violet-500/10",
     href: "/music"
   },
   {
     label: "Video Generation",
     icon: VideoIcon,
-    color: "text-gray-500",
+    color: "text-[#fd3b4b]",
     bgColor: "bg-violet-500/10",
     href: "/video"
   },

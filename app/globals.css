@@ -85,7 +85,11 @@ html, body, :root {
   }
 }
 
-
+@layer base {
+  body {
+    letter-spacing: theme('letterSpacing.wider');
+  }
+}
 
 @layer base {
   * {

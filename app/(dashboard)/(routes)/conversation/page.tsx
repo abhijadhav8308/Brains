@@ -69,7 +69,7 @@ const ConversationPage = () => {
                 title="Conversational AI"
                 description="chat with our new AI" 
                 icon={MessageSquare}
-                iconColor="text-violet-500"
+                iconColor="text-[#9a21eb]"
                 bgColor="bg-violet-500/10"    
             />
             <div className="px-4 lg:px-8">

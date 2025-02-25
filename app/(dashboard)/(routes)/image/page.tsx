@@ -61,7 +61,7 @@ const ImagePage = () => {
                 title="Image Generation"
                 description="Generate images from your prompts"
                 icon={ImageIcon}
-                iconColor="text-pink-700"
+                iconColor="text-[#3c83ed]"
                 bgColor="bg-pink-700/10"
             />
             <div className="px-4 lg:px-8">

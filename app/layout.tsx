@@ -1,11 +1,23 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 import { ModalProvider } from '@/components/modal-provider'
 import { ToasterProvider } from '@/components/toaster-provider'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ["latin"],
+  display: 'swap',
+  weight: '500',
+  adjustFontFallback: false,
+  variable: '--font-inter',
+})
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: 'swap',
+  adjustFontFallback: false,
+  variable: '--font-montserrat',
+})
 
 export const metadata: Metadata = {
   title: 'Brains',
@@ -20,7 +32,7 @@ export default function RootLayout({
   return (
     <ClerkProvider afterSignOutUrl="/">
       <html lang="en">
-        <body className={inter.className}>
+        <body className={`${montserrat.variable} ${inter.variable} font-inter`}>
           <ToasterProvider />
           <ModalProvider />
           {children}

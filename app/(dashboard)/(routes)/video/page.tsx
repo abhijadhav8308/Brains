@@ -58,7 +58,7 @@ const VideoPage = () => {
                 title="Video Generation"
                 description="Turn your prompts into video" 
                 icon={VideoIcon}
-                iconColor="text-orange-700"
+                iconColor="text-[#fd3b4b]"
                 bgColor="bg-orange-700/10"    
             />
             <div className="px-4 lg:px-8">

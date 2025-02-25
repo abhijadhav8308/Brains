@@ -9,6 +9,18 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			inter: ["var(--font-inter)"],
+			montserrat: ["var(--font-montserrat)"],
+		},
+		letterSpacing: {
+			tightest: '-.075em',
+			tighter: '-.05em',
+			normal: '0em',
+			wider: '.05em',
+			widest: '.1em',
+			global: '.03em',
+		},
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
