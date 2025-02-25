@@ -13,7 +13,7 @@ export const Empty = ({
                 <Image alt="Empty" fill src="/come-on-search-something.jpg" />
             </div>
             <div>
-                <h2 className="font-bold text-2xl mt-10">C'mon,<br />search something...</h2>
+                <h2 className="font-bold text-2xl mt-10">C&apos;mon,<br />search something...</h2>
                 <p className="text-muted-foreground">{label}</p>
             </div>
         </div>
